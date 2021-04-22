@@ -35,7 +35,7 @@ export async function getServerSideProps(context) {
     // In order to avoid google API requests quota during the development,
     // using a dummy JSON data that is stored in Response.js file.
     // Note, need to set to 'false' when in production.
-    const useDummyData = true;
+    const useDummyData = false;
 
     const startIndex = context.query.start || 0;
 
