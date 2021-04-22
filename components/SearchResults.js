@@ -12,9 +12,7 @@ function SearchResults({ results }) {
                     {results.items?.map((result) => (
                         <div key={result.link} className="mb-8">
                             <a className="group mb-1" href={result.link}>
-                                <span className="inline-block font-medium">
-                                    {result.formattedUrl}
-                                </span>
+                                <span className="inline-block">{result.formattedUrl}</span>
                                 <h2 className="text-blue-800 font-medium text-xl group-hover:underline truncate">
                                     {result.title}
                                 </h2>
